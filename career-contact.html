@@ -11,14 +11,99 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.iosslider.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/jquery.ikSelect.min.js"></script>
 	<script type="text/javascript" src="./js/script.js"></script>
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<link href="./css/ie.css" rel="stylesheet" type="text/css" />
 	<![endif]-->
 
+	<script type="text/javascript"src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCmi9y3CoA73rypC48y-MNmddFrxZh3Edo&sensor=false"></script>
+	<script type="text/javascript">
+      function initialize() {
+      	var map;
+		var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+
+		var stylez = [
+		    {
+		      featureType: "all",
+		      elementType: "all",
+		      stylers: [
+		        { saturation: -100 }
+		      ]
+		    }
+		];
+
+		var mapOptions_sf = {
+		    zoom: 17,
+		    center: brooklyn,
+		    mapTypeControlOptions: {
+		         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
+		    }
+		};
+		var mapOptions_minsk = {
+		    zoom: 10,
+		    center: brooklyn,
+		    mapTypeControlOptions: {
+		         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
+		    }
+		};
+		var mapOptions_tokyo = {
+		    zoom: 4,
+		    center: brooklyn,
+		    mapTypeControlOptions: {
+		         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
+		    }
+		};
+
+		var sf_Latlng = new google.maps.LatLng(40.6743890,-73.9455);
+		var minsk_Latlng = new google.maps.LatLng(40.6743890,-73.9455);
+		var tokyo_Latlng = new google.maps.LatLng(40.6743890,-73.9455);
+
+		var image = './css/i/map-point.png';
+
+		// San Francisco map
+		map_sf = new google.maps.Map(document.getElementById("map_sf"), mapOptions_sf);
+
+		var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });    
+		map_sf.mapTypes.set('tehgrayz', mapType);
+		map_sf.setMapTypeId('tehgrayz');
+
+		var marker = new google.maps.Marker({
+			position: sf_Latlng,
+			map: map_sf,
+			icon: image
+		});
+ 		
+ 		// Minsk map
+ 		map_minsk = new google.maps.Map(document.getElementById("map_minsk"), mapOptions_minsk);
+
+		var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });    
+		map_minsk.mapTypes.set('tehgrayz', mapType);
+		map_minsk.setMapTypeId('tehgrayz');
+ 		
+ 		var marker = new google.maps.Marker({
+			position: minsk_Latlng,
+			map: map_minsk,
+			icon: image
+		});
+
+ 		// Tokyo map
+ 		map_tokyo = new google.maps.Map(document.getElementById("map_tokyo"), mapOptions_tokyo);
+
+		var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });    
+		map_tokyo.mapTypes.set('tehgrayz', mapType);
+		map_tokyo.setMapTypeId('tehgrayz');
+
+		var marker = new google.maps.Marker({
+			position: tokyo_Latlng,
+			map: map_tokyo,
+			icon: image
+		});
+      }
+    </script>
 </head>
-<body>
+<body onload="initialize()">
 
 <div class="wrapper">
 	<aside class="sidemenu">
@@ -106,7 +191,7 @@
 				</div>
 			</section>
 			<section class="pagemain">
-				<div class="pagemain__header">contact us</div>
+				<div class="pagemain__header">Contact us</div>
 				<div class="block contacts color-grey">
 					<div class="block__inner cf">
 						<div class="contacts__info">
@@ -153,9 +238,9 @@
 									</div>
 								</div>
 								<div class="form__group">
-									<label for="contacts_type" class="form__label">Request type</label>
+									<label class="form__label">Request type</label>
 									<div class="form__controls">
-										<select name="" id="contacts_type">
+										<select name="" id="contacts_type" class="form__sel">
 											<option value="">General inquiries</option>
 											<option value="">Service request</option>
 											<option value="">Advertising</option>
@@ -165,13 +250,13 @@
 								<div class="form__group">
 									<label for="contacts_country" class="form__label">Country</label>
 									<div class="form__controls">
-										<input type="text" id="contacts_country" class="form__in" placeholder="Cyprus">
+										<input type="text" id="contacts_country" class="form__in" placeholder="ex. Krypton">
 									</div>
 								</div>
 								<div class="form__group">
 									<label for="contacts__msg" class="form__label">Message</label>
 									<div class="form__controls">
-										<textarea name="" id="contacts__msg" cols="30" rows="10" placeholder="Type in your message..."></textarea>
+										<textarea name="" class="form__ta" id="contacts__msg" cols="30" rows="10" placeholder="Type in your message..."></textarea>
 									</div>
 								</div>
 								<div class="form__group form__group-b">
@@ -185,7 +270,16 @@
 				</div>
 			</section>
 			<section class="block mapsblock">
-				
+				<div class="mapnav-wrap">
+					<ul class="mapnav">
+						<li class="mapnav__item"><a href="#map_sf">San Francisco</a></li>
+						<li class="mapnav__item m-active"><a href="#map_minsk">Minsk</a></li>
+						<li class="mapnav__item"><a href="#map_tokyo">Tokyo</a></li>
+					</ul>
+				</div>
+				<div id="map_sf" class="map"></div>
+				<div id="map_minsk" class="map m-active"></div>
+				<div id="map_tokyo" class="map"></div>
 			</section>
 		</div><!-- #content -->
 	</div><!-- .maincontainer -->
