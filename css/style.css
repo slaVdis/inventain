@@ -525,7 +525,7 @@ hgroup, nav, section, summary, video {
 						top: 2px;
 						}
 						.btn:after {
-							width: 200%;
+							/*width: 200%;
 							height: 400%;
 							top: -50%;
 							left: -50%;
@@ -539,24 +539,24 @@ hgroup, nav, section, summary, video {
 							-webkit-transform: translateX(-55%) translateY(-73%) rotate(-20deg);
 							-moz-transform: translateX(-55%) translateY(-73%) rotate(-20deg);
 							-ms-transform: translateX(-55%) translateY(-73%) rotate(-20deg);
-							transform: translateX(-55%) translateY(-73%) rotate(-20deg);
+							transform: translateX(-55%) translateY(-73%) rotate(-20deg);*/
 							}
 					.btn:hover {
 						color: white;
 						}
 						.btn:hover:after {
-							top: 20%;
+							/*top: 20%;
 							left: 20%;
 							opacity: .1;
 							-webkit-transform: translateX(-55%) translateY(-73%) rotate(-18deg);
 							-moz-transform: translateX(-55%) translateY(-73%) rotate(-18deg);
 							-ms-transform: translateX(-55%) translateY(-73%) rotate(-18deg);
-							transform: translateX(-55%) translateY(-73%) rotate(-18deg);
+							transform: translateX(-55%) translateY(-73%) rotate(-18deg);*/
 							}
 						.btn:active:after {
-							top: 80%;
+							/*top: 80%;
 							left: 80%;
-							opacity: .1;
+							opacity: .1;*/
 							}
 			
 			.teamlist-wrap {
@@ -595,30 +595,6 @@ hgroup, nav, section, summary, video {
 							width: 100%;
 							height: 100%;
 							}
-							.teamlist__pic:after {
-								width: 200%;
-								height: 400%;
-								top: -50%;
-								left: -50%;
-								background: #fff;
-								opacity: 0;
-								content: '';
-								position: absolute;
-								-webkit-transition: all 0.3s;
-								-moz-transition: all 0.3s;
-								transition: all 0.3s;
-								-webkit-transform: translateX(-56%) translateY(-86%) rotate(-27deg);
-								-moz-transform: translateX(-56%) translateY(-86%) rotate(-27deg);
-								-ms-transform: translateX(-56%) translateY(-86%) rotate(-27deg);
-								transform: translateX(-56%) translateY(-86%) rotate(-27deg);
-								}
-							.teamlist__pic:hover:after {
-								opacity: .1;
-								-webkit-transform: translateX(-45%) translateY(-78%) rotate(-21deg);
-								-moz-transform: translateX(-45%) translateY(-78%) rotate(-21deg);
-								-ms-transform: translateX(-45%) translateY(-78%) rotate(-21deg);
-								transform: translateX(-45%) translateY(-78%) rotate(-21deg);
-								}
 							.teamlist__pic img {
 								display: block;
 								min-width: 100%;
