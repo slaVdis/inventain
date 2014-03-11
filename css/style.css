@@ -157,6 +157,7 @@ hgroup, nav, section, summary, video {
 			-o-background-size: cover;
 			background-size: cover;
 			background-position: top center;
+			background-color: #CCC;
 			height: 1000px;
 			}
 		.header__content {
