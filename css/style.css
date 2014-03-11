@@ -1157,13 +1157,9 @@ hgroup, nav, section, summary, video {
 					-moz-border-radius: 10px;
 					border-radius: 10px;
 					overflow: hidden;
-					letter-spacing: -1px;
-					font-size: 0;
-					line-height: 0;
 					}
 					.mapnav__item {
-						display: inline-block;
-						letter-spacing: normal;
+						float: left;
 						font-size: 20px;
 						line-height: 1.85;
 						vertical-align: top;

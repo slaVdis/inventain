@@ -37,6 +37,7 @@
 		var mapOptions_sf = {
 		    zoom: 17,
 		    center: brooklyn,
+		    scrollwheel: false,
 		    mapTypeControlOptions: {
 		         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
 		    }
@@ -44,6 +45,7 @@
 		var mapOptions_minsk = {
 		    zoom: 10,
 		    center: brooklyn,
+		    scrollwheel: false,
 		    mapTypeControlOptions: {
 		         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
 		    }
@@ -51,6 +53,7 @@
 		var mapOptions_tokyo = {
 		    zoom: 4,
 		    center: brooklyn,
+		    scrollwheel: false,
 		    mapTypeControlOptions: {
 		         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
 		    }
@@ -271,7 +274,7 @@
 			</section>
 			<section class="block mapsblock">
 				<div class="mapnav-wrap">
-					<ul class="mapnav">
+					<ul class="mapnav cf">
 						<li class="mapnav__item"><a href="#map_sf">San Francisco</a></li>
 						<li class="mapnav__item m-active"><a href="#map_minsk">Minsk</a></li>
 						<li class="mapnav__item"><a href="#map_tokyo">Tokyo</a></li>
