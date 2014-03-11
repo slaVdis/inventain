@@ -162,6 +162,24 @@ jQuery(document).ready(function() {
 				$(this).addClass('m-active');
 				$('.map').not(activeMap).css({'top' : '100%'});
 			});
-		})
+		});
+
+	};
+	if ( $('.positions').length ) {
+		$('.position__title').click(function(){
+			var parentHeader = $(this).parents('.positions__header'),
+				content = parentHeader.next('.positions__content');
+
+			$('.positions__content').not(content).slideUp(700);
+			$('.positions__header').not(parentHeader).removeClass('m-active');
+
+			if ( parentHeader.hasClass('m-active') ) {
+				parentHeader.removeClass('m-active');
+				content.stop().slideUp(700)
+			} else {
+				parentHeader.addClass('m-active');
+				content.stop().slideDown(700);
+			};
+		});
 	};
 });
