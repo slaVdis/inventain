@@ -369,6 +369,9 @@ hgroup, nav, section, summary, video {
 				margin-bottom: 40px;
 				margin-top: -3px;
 				}
+				.pagemoto__content__title p {
+					padding-bottom: 0 !important;
+					}
 				.pagemoto__content__title a {
 					color: #40bd51;
 					border-bottom: 1px solid #40bd51;
