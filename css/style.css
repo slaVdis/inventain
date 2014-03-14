@@ -523,12 +523,14 @@ hgroup, nav, section, summary, video {
 								line-height: 1.9;
 								width: 60%;
 								}
+								.article__text strong,
 								.article__text__title {
 									font-size: 16px;
 									text-transform: uppercase;
 									letter-spacing: 2px;
 									margin-bottom: 10px;
 									font-family: 'gotham_promedium';
+									font-weight: normal;
 									}
 								.article__text p {
 									padding-bottom: 11px;
