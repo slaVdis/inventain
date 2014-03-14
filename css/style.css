@@ -1249,6 +1249,7 @@ hgroup, nav, section, summary, video {
 				display: none;
 				padding-top: 8px;
 				}
+				.positions__content p + .article__text strong,
 				.positions__content p + .article__text__title {
 					padding-top: 7px;
 					font-size: 15px;
