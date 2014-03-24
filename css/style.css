@@ -2,10 +2,8 @@
 html {
 	width:100%;
 	height:100%;
-	/*background: url(dream_job.jpg) no-repeat 0 4px;*/
 	}
 body {
-	/*opacity: .5;*/
 	width: 100%;
 	height: 100%;
 	font-family: 'gotham_proregular';
@@ -408,6 +406,21 @@ hgroup, nav, section, summary, video {
 				font-effect: none;
 				}
 
+			.pagemain__header-wrap {
+				width: 100%;
+				}
+
+			.pagemain__header-wrap.color-grey {
+				background: #f2f2f3;
+				}
+			.block + .pagemain__header-wrap {
+				padding-top: 50px;
+				margin-bottom: 15px;
+				}
+				.pagemain__header-wrap.color-grey .pagemain__header {
+					color: white;
+					}
+
 		.pagemain__inner {}
 
 			.pagemain__icons {
@@ -503,6 +516,7 @@ hgroup, nav, section, summary, video {
 								margin-right: 10%;
 								}
 								.article__title {
+									position: relative;
 									font-size: 20px;
 									text-transform: uppercase;
 									letter-spacing: 2px;
@@ -513,6 +527,20 @@ hgroup, nav, section, summary, video {
 										font-style: normal;
 										color: #40bd51;
 										}
+									.article__title__icon {
+										top: 3px;
+										left: 10px;
+										width: 65px;
+										position: absolute;
+										display: block;
+										}
+										.article__title__icon img {
+											max-width: 100%;
+											}
+									.article__title__icon + p {
+										padding-left: 85px;
+										}
+
 								.article__header__sub {
 									font-size: 21px;
 									color: #737373;
@@ -537,6 +565,37 @@ hgroup, nav, section, summary, video {
 									}
 								.article__text p + .btn {
 									margin-top: 23px;
+									}
+								.checklist {}
+									.checklist li {
+										position: relative;
+										padding-left: 42px;
+										margin-bottom: 24px;
+										}
+									.checklist li:before {
+										position: absolute;
+										display: block;
+										background: url(./i/check.png) no-repeat;
+										width: 20px;
+										height: 18px;
+										content: '';
+										top: 5px;
+										left: 0;
+										}
+								.article__readmore {
+									color: #3fbd51;
+									border-bottom: 1px solid #b0e0b6;
+									-webkit-transition: all .3s;
+									-moz-transition: all .3s;
+									-ms-transition: all .3s;
+									-o-transition: all .3s;
+									transition: all .3s;
+									}
+								.article__readmore:hover {
+									border-color: #333;
+									}
+								.checklist + .article__readmore {
+									margin-left: 40px;
 									}
 
 					.btn {
@@ -589,6 +648,15 @@ hgroup, nav, section, summary, video {
 						.btn:active:after {
 							width: 180%;
 							}
+
+					.btn i {
+						font-size: 16px;
+						color: #288234;
+						display: inline-block;
+						vertical-align: top;
+						font-style: normal;
+						margin-left: 26px;
+						}
 			
 			.teamlist-wrap {
 				margin: -30px 0 0;
@@ -1289,6 +1357,131 @@ hgroup, nav, section, summary, video {
 					.positions__section .article__text__title {
 						letter-spacing: 1px;
 						}
+
+		.benefits {}
+			.benefits .article {
+				padding-bottom: 0;
+				}
+				.benefits .article:first-child .article__content {
+					padding-top: 0;
+					border-top: none;
+					}
+				.benefits .article__content {
+					padding-top: 45px;
+					}
+
+		.pagepic {
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-position: top center;
+			height: 465px;
+			background-attachment: fixed, fixed;
+			background-repeat: no-repeat;
+			width: 100%;
+			}
+
+		.pagegal {
+			margin-top: 35px;
+			}
+			.pagegal__list {
+				/*max-width: 1600px;*/
+				margin: 0 auto;
+				letter-spacing: -1px;
+				font-size: 0;
+				line-height: 0;
+				text-align: center;
+				}
+				.pagegal__item {
+					width: 20%;
+					display: inline-block;
+					letter-spacing: normal;
+					font-size: 16px;
+					line-height: normal;
+					vertical-align: top;
+					}
+					.pagegal__item a {
+						display: block;
+						position: relative;
+						}
+					.pagegal__item a:before {
+						position: absolute;
+						display: block;
+						width: 100%;
+						height: 100%;
+						background: #40bd51;
+						content: '';
+						opacity: 0;
+						top: 0;
+						left: 0;
+						-webkit-transition: opacity .3s;
+						-moz-transition: opacity .3s;
+						-ms-transition: opacity .3s;
+						-o-transition: opacity .3s;
+						transition: opacity .3s;
+						}
+					.pagegal__item a:hover:before {
+						opacity: .8;
+						}
+					.pagegal__item a:after {
+						position: absolute;
+						display: block;
+						width: 102px;
+						height: 102px;
+						background: url(./i/icon-plus-white.png) no-repeat;
+						content: '';
+						left: 50%;
+						margin-left: -51px;
+						top: 50%;
+						margin-top: -51px;
+						-webkit-transition: all .5s;
+						-moz-transition: all .5s;
+						transition: all .5s;
+						opacity: 0;
+						}
+					.pagegal__item a:hover:after {
+						-webkit-transform: rotate(90deg);
+						-moz-transform: rotate(90deg);
+						-ms-transform: rotate(90deg);
+						transform: rotate(90deg);
+						opacity: 1;
+						}
+						.pagegal__item img {
+							width: 100%;
+							display: block;
+							}
+
+		.pageicons {
+			margin-bottom: 75px;
+			}
+			.pageicons__item {
+				position: relative;
+				float: left;
+				width: 193px;
+				padding-left: 70px;
+				font-family: 'gotham_prolight';
+				line-height: 1;
+				margin-left: 33px;
+				}
+				.pageicons__pic {
+					position: absolute;
+					display: block;
+					width: 60px;
+					height: 60px;
+					top: 2px;
+					left: 0;
+					}
+					.pageicons__pic img {
+						max-width: 100%;
+						}
+				.pageicons__number {
+					font-size: 60px;
+					margin-bottom: 3px;
+					}
+				.pageicons__title {
+					font-size: 20px;
+					}
 
 .footer {
 	background: #f4f4f4;
