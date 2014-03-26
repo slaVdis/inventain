@@ -11,6 +11,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="./js/jquery.scrollTo-min.js"></script>
+	<script type="text/javascript" src="./js/jquery.ikSelect.min.js"></script>
 	<script type="text/javascript" src="./js/script.js"></script>
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,7 +20,63 @@
 
 </head>
 <body>
-
+<div class="popup">
+	<i class="popup__overlay"></i>
+	<a href="#" class="popup__close">Close popup</a>
+	<div class="popup__block">
+		<div class="popup__header">Be creative</div>
+		<form action="" class="form popup__form" id="contacts">
+			<fieldset>
+				<div class="form__cols cf">
+					<div class="form__col">
+						<div class="form__group form__group-inside success">
+							<label for="contacts_name" class="form__label">Name</label>
+							<div class="form__controls">
+								<input type="text" id="contacts_name" class="form__in" placeholder="ex. Clark Kent">
+							</div>
+						</div>
+						<div class="form__group form__group-inside">
+							<label for="contacts_mail" class="form__label">E-mail</label>
+							<div class="form__controls">
+								<input type="email" id="contacts_mail" class="form__in" placeholder="ex. Clarkkent@superhero.com">
+							</div>
+						</div>
+					</div>
+					<div class="form__col">
+						<div class="form__group">
+							<label class="form__label">Request type</label>
+							<div class="form__controls">
+								<select name="" id="contacts_type" class="form__sel">
+									<option value="">General inquiries</option>
+									<option value="">Service request</option>
+									<option value="">Advertising</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__group form__group-inside">
+							<label for="contacts_country" class="form__label">Country</label>
+							<div class="form__controls">
+								<input type="text" id="contacts_country" class="form__in" placeholder="ex. Krypton">
+							</div>
+						</div>
+					</div>
+				</div><!-- .form__cols -->
+				<div class="form__group form__group-inside">
+					<label for="contacts__msg" class="form__label">Message</label>
+					<div class="form__controls">
+						<textarea name="" class="form__ta popup__ta" id="contacts__msg" cols="30" rows="10" placeholder="Type in your message..."></textarea>
+					</div>
+				</div>
+				<div class="form__group form__group-b">
+					<div class="form__controls">
+						<button class="btn form__btn" type="submit">Apply now</button>
+						<button class="link popup__cancel" type="reset">Cancel</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
 <div class="wrapper">
 	<aside class="sidemenu">
 		<i class="sidemenu__bg"></i>

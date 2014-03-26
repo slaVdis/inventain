@@ -191,4 +191,25 @@ jQuery(document).ready(function() {
 			};
 		});
 	};
+
+	if ( $('.popup').length ) {
+		$('.teamlist__join').click(function(e){
+			e.preventDefault();
+
+			$('.popup').fadeIn();
+			setTimeout(function() { $('.popup__block').animate({ 'top' : 100 }, 1000); }, 50)
+		});
+		$('.popup__close').click(function(e){
+			e.preventDefault();
+
+			$('.popup__block').animate({ 'top' : '-100%' }, 500);
+			setTimeout(function() { $('.popup').fadeOut(); }, 100)
+		});
+		$('.popup__overlay').click(function(e){
+			e.preventDefault();
+
+			$('.popup__block').animate({ 'top' : '-100%' }, 500);
+			setTimeout(function() { $('.popup').fadeOut(); }, 100)
+		});
+	};
 });
