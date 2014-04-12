@@ -7,6 +7,7 @@
 	<meta name="description" content="" />
 	<link rel="stylesheet" href="./css/fonts.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/retina.css" type="text/css" media="screen" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.iosslider.min.js"></script>
@@ -63,7 +64,10 @@
 		<header class="header cf">
 			<div class="header__bg" style="background-image: url(./pics/bg-app.jpg);"></div>
 			<div class="header__content">
-				<a href="#" class="logo"><img src="./css/i/logo.png" alt="Invetain"></a>
+				<a href="#" class="logo">
+					<img src="./css/i/logo.png" alt="Invetain" class="non-retina">
+					<img src="./css/i/logo@x2.png" alt="Invetain" class="retina">
+				</a>
 				<a href="#" class="menu-link">Menu</a>
 				<div class="header__title"><h1>Our apps</h1></div>
 			</div>
@@ -74,17 +78,29 @@
 					<li class="pagenav__item m-active">
 						<em></em>
 						<a href="#">
-							<i><img src="./pics/icon-app-ninja.png" alt="Magic ninja"></i>
-							<b><img src="./pics/icon-app-ninja.png" alt="Magic ninja"></b>
+							<i>
+								<img src="./pics/icon-app-ninja.png" alt="Magic ninja" class="non-retina">
+								<img src="./pics/icon-app-ninja@2x.png" alt="Magic ninja" class="retina">
+							</i>
+							<b>
+								<img src="./pics/icon-app-ninja.png" alt="Magic ninja" class="non-retina">
+								<img src="./pics/icon-app-ninja@2x.png" alt="Magic ninja" class="retina">
+							</b>
 							Magic ninja
 						</a>
 					</li>
 					<li class="pagenav__item">
 						<em></em>
 						<a href="#">
-							<i><img src="./pics/icon-app-flig.png" alt="Flig the nuddy"></i>
-							<b><img src="./pics/icon-app-flig.png" alt="Flig the nuddy"></b>
-							Flig the nuddy
+							<i>
+								<img src="./pics/icon-app-flig.png" alt="Fligger" class="non-retina">
+								<img src="./pics/icon-app-flig@2x.png" alt="Fligger" class="retina">
+							</i>
+							<b>
+								<img src="./pics/icon-app-flig.png" alt="Fligger" class="non-retina">
+								<img src="./pics/icon-app-flig@2x.png" alt="Fligger" class="retina">
+							</b>
+							Fligger
 						</a>
 					</li>
 				</ul>
@@ -94,9 +110,6 @@
 					<div class="pagemoto__title">Description</div>
 					<div class="pagemoto__content">
 						<p>Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.	However, many of the most learned and wise adhere to the new scheme of expressing themselves by things; which has only this inconvenience attending it.</p>
-						<p>
-							<a href="#"><img src="./pics/appstore.png" alt="Available on the App Store"></a>
-						</p>
 					</div>
 				</div>
 			</section>
@@ -105,7 +118,8 @@
 				<div class="block sliderblock color-grey">
 					<div class="appslider">
 						<div class="appslider__ipad">
-							<img src="./css/i/ipad.png" class="appslider__ipad__bg" alt="">
+							<img src="./css/i/ipad.png" class="appslider__ipad__bg non-retina" alt="">
+							<img src="./css/i/ipad@2x.png" class="appslider__ipad__bg retina" alt="">
 							<div class="appslider__ipad__slider">
 								<div class='doubleSlider-1'>
 									<div class='slider'>								
@@ -226,7 +240,10 @@
 			</ul>
 		</div>
 		<div class="footer__l">
-			<a href="#" class="footer__logo"><img src="./css/i/logo-footer.png" alt="Invetain"></a>
+			<a href="#" class="footer__logo">
+				<img src="./css/i/logo-footer.png" alt="Invetain" class="non-retina">
+				<img src="./css/i/logo-footer@2x.png" alt="Invetain" class="retina">
+			</a>
 			<div class="footer__copy">&copy;2013 Invetain. All rights reserved.</div>
 			<ul class="footer__list footer__list-copy">
 				<li><a href="#">Terms of condition</a></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="" />
 	<link rel="stylesheet" href="./css/fonts.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/retina.css" type="text/css" media="screen" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.iosslider.min.js"></script>
@@ -151,7 +152,10 @@
 		<header class="header cf">
 			<div class="header__bg" style="background-image: url(./pics/bg-contacts.jpg);"></div>
 			<div class="header__content">
-				<a href="#" class="logo"><img src="./css/i/logo.png" alt="Invetain"></a>
+				<a href="#" class="logo">
+					<img src="./css/i/logo.png" alt="Invetain" class="non-retina">
+					<img src="./css/i/logo@x2.png" alt="Invetain" class="retina">
+				</a>
 				<a href="#" class="menu-link">Menu</a>
 				<div class="header__title"><h1>Career</h1></div>
 			</div>
@@ -162,24 +166,42 @@
 					<li class="pagenav__item">
 						<em></em>
 						<a href="#">
-							<i><img src="./pics/icon-dream-job.png" alt="Dream job"></i>
-							<b><img src="./pics/icon-dream-job.png" alt="Dream job"></b>
+							<i>
+								<img src="./pics/icon-dream-job.png" alt="Dream job" class="non-retina">
+								<img src="./pics/icon-dream-job@2x.png" alt="Dream job" class="retina">
+							</i>
+							<b>
+								<img src="./pics/icon-dream-job.png" alt="Dream job" class="non-retina">
+								<img src="./pics/icon-dream-job@2x.png" alt="Dream job" class="retina">
+							</b>
 							Dream job
 						</a>
 					</li>
 					<li class="pagenav__item">
 						<em></em>
 						<a href="#">
-							<i><img src="./pics/icon-we-hire.png" alt="We hire"></i>
-							<b><img src="./pics/icon-we-hire.png" alt="We hire"></b>
+							<i>
+								<img src="./pics/icon-we-hire.png" alt="We hire" class="non-retina">
+								<img src="./pics/icon-we-hire@2x.png" alt="We hire" class="retina">
+							</i>
+							<b>
+								<img src="./pics/icon-we-hire.png" alt="We hire" class="non-retina">
+								<img src="./pics/icon-we-hire@2x.png" alt="We hire" class="retina">
+							</b>
 							We hire
 						</a>
 					</li>
 					<li class="pagenav__item m-active">
 						<em></em>
 						<a href="#">
-							<i><img src="./pics/icon-contact-us.png" alt="Contact us"></i>
-							<b><img src="./pics/icon-contact-us.png" alt="Contact us"></b>
+							<i>
+								<img src="./pics/icon-contact-us.png" alt="Contact us" class="non-retina">
+								<img src="./pics/icon-contact-us@2x.png" alt="Contact us" class="retina">
+							</i>
+							<b>
+								<img src="./pics/icon-contact-us.png" alt="Contact us" class="non-retina">
+								<img src="./pics/icon-contact-us@2x.png" alt="Contact us" class="retina">
+							</b>
 							Contact us
 						</a>
 					</li>
@@ -234,10 +256,11 @@
 										<input type="text" id="contacts_name" class="form__in" placeholder="ex. Clark Kent">
 									</div>
 								</div>
-								<div class="form__group">
+								<div class="form__group error">
 									<label for="contacts_mail" class="form__label">E-mail</label>
 									<div class="form__controls">
 										<input type="email" id="contacts_mail" class="form__in" placeholder="ex. Clarkkent@superhero.com">
+										<span class="wpcf7-not-valid-tip" role="alert">Please fill the required field.</span>
 									</div>
 								</div>
 								<div class="form__group">
@@ -268,6 +291,14 @@
 									</div>
 								</div>
 							</fieldset>
+							<fieldset class="form__response">
+								<div class="form__response__header">Thanks.</div>
+								<div class="form__response__content">
+									<div class="form__response__content__header">Your message was sent successfully.</div>
+									<div class="form__response__content__text">Please wait for a reply from our manager. If you feel that you made a mistake, you can allways sand us another mail.</div>
+									<button class="btn form__btn" type="submit">Send it again</button>
+								</div>
+							</fieldset>
 						</form>
 					</div>
 				</div>
@@ -275,9 +306,7 @@
 			<section class="block mapsblock">
 				<div class="mapnav-wrap">
 					<ul class="mapnav cf">
-						<li class="mapnav__item"><a href="#map_sf">San Francisco</a></li>
 						<li class="mapnav__item m-active"><a href="#map_minsk">Minsk</a></li>
-						<li class="mapnav__item"><a href="#map_tokyo">Tokyo</a></li>
 					</ul>
 				</div>
 				<div id="map_sf" class="map"></div>
@@ -329,7 +358,10 @@
 			</ul>
 		</div>
 		<div class="footer__l">
-			<a href="#" class="footer__logo"><img src="./css/i/logo-footer.png" alt="Invetain"></a>
+			<a href="#" class="footer__logo">
+				<img src="./css/i/logo-footer.png" alt="Invetain" class="non-retina">
+				<img src="./css/i/logo-footer@2x.png" alt="Invetain" class="retina">
+			</a>
 			<div class="footer__copy">&copy;2013 Invetain. All rights reserved.</div>
 			<ul class="footer__list footer__list-copy">
 				<li><a href="#">Terms of condition</a></li>

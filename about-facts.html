@@ -7,6 +7,7 @@
 	<meta name="description" content="" />
 	<link rel="stylesheet" href="./css/fonts.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/retina.css" type="text/css" media="screen" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.backgroundpos.min.js"></script>
@@ -63,7 +64,10 @@
 		<header class="header cf">
 			<div class="header__bg" style="background-image: url(./pics/bg-about-facts.jpg);"></div>
 			<div class="header__content">
-				<a href="#" class="logo"><img src="./css/i/logo.png" alt="Invetain"></a>
+				<a href="#" class="logo">
+					<img src="./css/i/logo.png" alt="Invetain" class="non-retina">
+					<img src="./css/i/logo@x2.png" alt="Invetain" class="retina">
+				</a>
 				<a href="#" class="menu-link">Menu</a>
 				<div class="header__title"><h1>About us</h1></div>
 			</div>
@@ -74,24 +78,42 @@
 					<li class="pagenav__item">
 						<em></em>
 						<a href="#">
-							<i><img src="./pics/icon-about-mission.png" alt="Mission"></i>
-							<b><img src="./pics/icon-about-mission.png" alt="Mission"></b>
+							<i>
+								<img src="./pics/icon-about-mission.png" alt="Mission" class="non-retina">
+								<img src="./pics/icon-about-mission@2x.png" alt="Mission" class="retina">
+							</i>
+							<b>
+								<img src="./pics/icon-about-mission.png" alt="Mission" class="non-retina">
+								<img src="./pics/icon-about-mission@2x.png" alt="Mission" class="retina">
+							</b>
 							Mission
 						</a>
 					</li>
 					<li class="pagenav__item">
 						<em></em>
 						<a href="#">
-							<i><img src="./pics/icon-about-team.png" alt="Team"></i>
-							<b><img src="./pics/icon-about-team.png" alt="Team"></b>
+							<i>
+								<img src="./pics/icon-about-team.png" alt="Team" class="non-retina">
+								<img src="./pics/icon-about-team@2x.png" alt="Team" class="retina">
+							</i>
+							<b>
+								<img src="./pics/icon-about-team.png" alt="Team" class="non-retina">
+								<img src="./pics/icon-about-team@2x.png" alt="Team" class="retina">
+							</b>
 							Team
 						</a>
 					</li>
 					<li class="pagenav__item m-active">
 						<em></em>
 						<a href="#">
-							<i><img src="./pics/icon-about-facts.png" alt="Facts"></i>
-							<b><img src="./pics/icon-about-facts.png" alt="Facts"></b>
+							<i>
+								<img src="./pics/icon-about-facts.png" alt="Facts" class="non-retina">
+								<img src="./pics/icon-about-facts@2x.png" alt="Facts" class="retina">
+							</i>
+							<b>
+								<img src="./pics/icon-about-facts.png" alt="Facts" class="non-retina">
+								<img src="./pics/icon-about-facts@2x.png" alt="Facts" class="retina">
+							</b>
 							Facts
 						</a>
 					</li>
@@ -111,21 +133,30 @@
 					<div class="block__inner pagemain__inner cf">
 						<ul class="pagemain__icons">
 							<li class="pagemain__icons__item">
-								<i class="pagemain__icons__pic"><img src="./pics/icon-facts-game.png" alt="Wins. Loses."></i>
+								<i class="pagemain__icons__pic">
+									<img src="./pics/icon-facts-game.png" alt="Wins. Loses." class="non-retina">
+									<img src="./pics/icon-facts-game@2x.png" alt="Wins. Loses." class="retina">
+								</i>
 								<div class="pagemain__icons__title">8</div>
 								<div class="pagemain__icons__desc">
 									Wins. Loses.  We had past weekend
 								</div>
 							</li>
 							<li class="pagemain__icons__item">
-								<i class="pagemain__icons__pic"><img src="./pics/icon-facts-coffee.png" alt="Coffee cups"></i>
+								<i class="pagemain__icons__pic">
+									<img src="./pics/icon-facts-coffee.png" alt="Coffee cups" class="non-retina">
+									<img src="./pics/icon-facts-coffee@2x.png" alt="Coffee cups" class="retina">
+								</i>
 								<div class="pagemain__icons__title">45</div>
 								<div class="pagemain__icons__desc">
 									Coffee cups we had this morning.
 								</div>
 							</li>
 							<li class="pagemain__icons__item">
-								<i class="pagemain__icons__pic"><img src="./pics/icon-facts-money.png" alt="Payment"></i>
+								<i class="pagemain__icons__pic">
+									<img src="./pics/icon-facts-money.png" alt="Payment" class="non-retina">
+									<img src="./pics/icon-facts-money@2x.png" alt="Payment" class="retina">
+								</i>
 								<div class="pagemain__icons__title">1000</div>
 								<div class="pagemain__icons__desc">
 									We paid 1000+ to each one who said hello
@@ -238,7 +269,10 @@
 			</ul>
 		</div>
 		<div class="footer__l">
-			<a href="#" class="footer__logo"><img src="./css/i/logo-footer.png" alt="Invetain"></a>
+			<a href="#" class="footer__logo">
+				<img src="./css/i/logo-footer.png" alt="Invetain" class="non-retina">
+				<img src="./css/i/logo-footer@2x.png" alt="Invetain" class="retina">
+			</a>
 			<div class="footer__copy">&copy;2013 Invetain. All rights reserved.</div>
 			<ul class="footer__list footer__list-copy">
 				<li><a href="#">Terms of condition</a></li>

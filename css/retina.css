@@ -1,0 +1,107 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+
+		body img.retina {
+			display: block;
+			}
+		body img.non-retina {
+			display: none;
+			}
+
+		.sidemenu__close {
+			background: url(./i/icon-close@2x.png) no-repeat center;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.menu-link:before,
+		.menu-link:after {
+			background: url(./i/icon-menu@2x.gif) repeat-y;
+			-webkit-background-size: 30px;
+			background-size: 30px;
+			}
+		.menu-link:before {
+			background-position: -15px 0;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.pagenav__item.m-active > em {
+			background-image: url(./i/tail-header@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.article__icon-video {
+			background-image: url(./i/icon-video@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.checklist li:before {
+			background-image: url(./i/check@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.teamlist__about:before {
+			background-image: url(./i/tails-green@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.teamlist__join i:before {
+			background-image: url(./i/icon-plus@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.doubleSliderNextButton,
+		.doubleSliderPrevButton {
+			background-image: url(./i/arrows-slider@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.form__group.success .form__controls:after {
+			background-image: url(./i/icon-success@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+		.form__group.error .form__controls:after {
+			background-image: url(./i/icon-error@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.ik_select_link > .after,
+		.ik_select_link:after {
+			background-image: url(./i/arrow-sel@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.position__title b {
+			background-image: url(./i/bd-dotted@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.pagegal__item a:after {
+			background-image: url(./i/icon-plus-white@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.popup__close {
+			background-image: url(./i/icon-popup-close@2x.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			}
+
+		.social__item a:before,
+		.social__item a:after {
+			background-image: url(./i/icons-social@2x.png);
+			-webkit-background-size: 88px;
+			background-size: 88px;
+			}
+	}

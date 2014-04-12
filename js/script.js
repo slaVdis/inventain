@@ -88,7 +88,7 @@ jQuery(document).ready(function() {
 			} else {
 				aboutblock.fadeIn();
 				parentItem.addClass('m-active');
-				$.scrollTo( aboutblock, 800 );
+				$.scrollTo( aboutblock, 200 );
 			};	
 
 		});
@@ -192,6 +192,7 @@ jQuery(document).ready(function() {
 		});
 	};
 
+	// Popup
 	if ( $('.popup').length ) {
 		$('.teamlist__join').click(function(e){
 			e.preventDefault();
@@ -209,7 +210,99 @@ jQuery(document).ready(function() {
 			e.preventDefault();
 
 			$('.popup__block').animate({ 'top' : '-100%' }, 500);
-			setTimeout(function() { $('.popup').fadeOut(); }, 100)
+			setTimeout(function() { $('.popup').fadeOut(); }, 150)
+		});
+	};
+
+	// Images popups
+	if ( $('.pagegal__list' ).length) {
+		$('.pagegal__list').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			closeBtnInside: false,
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			  },
+			retina: {
+				ratio: 2,		
+
+				replaceSrc: function(item, ratio) {
+			  		return item.src.replace(/\.\w+$/, function(m) { return '@2x' + m; });
+				}
+			},
+			midClick:true
+		});
+	};
+
+	// Read more
+	if ( $('.article__readmore').length ) {
+		$('.article__readmore').click(function(e){
+			e.preventDefault();
+			$(this).prev('.m-hidden').slideDown();
+			$(this).slideUp();
+		});
+	};
+
+	// Slider
+	if ( $('.mainslider').length ) {
+		var slidesize = function(){
+			var height = $(window).height();
+
+			if ( height < 565 ) { height = 565 };
+			$('.mainslider').css({ 'height' : height });
+		}
+		slidesize();
+		$(window).resize(function() {
+			slidesize();
+			app_pencil();
+			app_pencil_m();
+			app_ruler_round();
+		});
+
+		// Pencil
+		var app_pencil = function(){
+			if ( $('#pencil_s').length ) {
+				var pencil = $('#pencil_s'),
+					height = pencil.height() - 2,
+					width = pencil.width() - 2;
+				$('#pencil_s').css({ 'top' : -height, 'right' : -width });
+			};
+		}
+		app_pencil();
+
+		var app_pencil_m = function(){
+			$('#app_pencil_m').css({ 'right' :  57.25*$('#app_ipad > img').width()/100});
+		};
+		app_pencil_m();
+
+		var app_ruler_round = function(){
+			$('#app_ruler_round').css({ 'right' :  26*$('#app_ipad > img').width()/100});
+		};
+		app_ruler_round();
+
+
+		$('.mainslider').find('.slide').each(function(){
+			$('#slidenav_list').append('<li>');
+		});
+		$('#slidenav_list li').first().addClass('m-active');
+		$('.mainslider .slide').first().addClass('m-active');
+		$('#slidenav_list li').click(function(){
+			var i = $(this).index(),
+				target = $('.mainslider').find('.slide').eq(i);
+
+			$('#slidenav_list li').not(this).removeClass('m-active');
+			$(this).addClass('m-active');
+
+			$('.mainslider .slide').not(target).fadeOut().css({ 'z-index' : 1 });
+			target.css({ 'z-index' : 2 }).fadeIn();
+
+			if ( target.hasClass('m-light') ) {
+				$('.maincontainer').addClass('m-light');
+			} else {
+				$('.maincontainer').removeClass('m-light');
+			};
 		});
 	};
 });
