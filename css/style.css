@@ -3248,7 +3248,7 @@ hgroup, nav, section, summary, video {
 			.benefits .article {
 				padding-bottom: 0;
 				}
-				.benefits .article:first-child .article__content {
+				.benefits:nth-of-type(1) .article:first-child .article__content {
 					padding-top: 0;
 					border-top: none;
 					}
