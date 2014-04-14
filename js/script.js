@@ -40,8 +40,10 @@ jQuery(document).ready(function() {
 			if ( $('.sidemenu').hasClass('m-active') ) {
 				trackScroll = false;
 				$('.sidemenu').animate({'width' : 0, 'min-width' : 0}, 400, 'easeInCubic').removeClass('m-active');
+				$('.wrapper').removeClass('menu-showed');
 			} else {
 				$('.sidemenu').animate({'width' : '20%', 'min-width' : 200}, 400, 'easeInCubic').addClass('m-active');
+				$('.wrapper').addClass('menu-showed');
 				trackScroll = true;
 			};
 		});
@@ -57,6 +59,7 @@ jQuery(document).ready(function() {
 						trackScroll = false;
 						$('.sidemenu').stop().animate({'width' : 0, 'min-width' : 0}, 400, 'easeInCubic', function() {
 							$(this).removeClass('m-active').css({'width' : 0, 'min-width' : 0});
+							$('.wrapper').removeClass('menu-showed');
 						});
 					};
 				};
@@ -70,6 +73,7 @@ jQuery(document).ready(function() {
 		$('.sidemenu__close').click(function(e) {
 			e.preventDefault();
 			$('.sidemenu').animate({'width' : 0, 'min-width' : 0}, 400, 'easeInCubic').removeClass('m-active');
+			$('.wrapper').removeClass('menu-showed');
 		});
 	};
 
@@ -256,12 +260,11 @@ jQuery(document).ready(function() {
 		slidesize();
 		$(window).resize(function() {
 			slidesize();
-			app_pencil();
-			app_pencil_m();
-			app_ruler_round();
+			app_activate();
+			career_activate();
 		});
 
-		// Pencil
+		// App slider positions
 		var app_pencil = function(){
 			if ( $('#pencil_s').length ) {
 				var pencil = $('#pencil_s'),
@@ -269,19 +272,57 @@ jQuery(document).ready(function() {
 					width = pencil.width() - 2;
 				$('#pencil_s').css({ 'top' : -height, 'right' : -width });
 			};
-		}
-		app_pencil();
+		};
 
 		var app_pencil_m = function(){
-			$('#app_pencil_m').css({ 'right' :  57.25*$('#app_ipad > img').width()/100});
+			$('#app_pencil_m').css({ 'right' :  57.25*$('#app_ipad > img').width()/100 });
 		};
-		app_pencil_m();
-
 		var app_ruler_round = function(){
-			$('#app_ruler_round').css({ 'right' :  26*$('#app_ipad > img').width()/100});
+			$('#app_ruler_round').css({ 'right' :  26*$('#app_ipad > img').width()/100 });
 		};
-		app_ruler_round();
+		var app_hand_right = function(){
+			$('#app_hand_right').css({
+				'left' :  $('#app_scheme img').width()/1.15,
+				'top' :  $('#app_scheme img').height()/2 - $('#app_hand_right img').height()/6.75
+			});
+		};
 
+		var app_activate = function(){
+			app_pencil();
+			app_pencil_m();
+			app_ruler_round();
+			app_hand_right();
+		};
+
+		var career_keyboard = function(){
+			var padleft = ($('#career_keyboard').width() - $('#career_keyboard img').width()) / 2;
+			$('#career_mouse').css({ 'left' :  padleft + $('#career_keyboard img').width() + 30 });
+		};
+		career_keyboard();
+		var career_ipad_hotspot = function(){
+			$('#career_ipad_hotspot').css({
+				'width' :  $('#career_ipad img').width() * 87.23 / 100,
+				'height' :  $('#career_ipad img').height() * 79.18 / 100,
+				'left' :  $('#career_ipad img').width() * 5.1 / 100,
+				'top' :  $('#career_ipad img').height() * 11.43 / 100 
+			});
+		};
+		career_ipad_hotspot();
+		var career_iphone_hotspot = function(){
+			$('#career_iphone_hotspot').css({
+				'width' :  $('#career_iphone img').width() * 82.14 / 100,
+				'height' :  $('#career_iphone img').height() * 72.93 / 100,
+				'left' :  $('#career_iphone img').width() * 7.14 / 100,
+				'top' :  $('#career_iphone img').height() * 13.3 / 100 
+			});
+		};
+		career_iphone_hotspot();
+
+		var career_activate = function(){
+			career_keyboard();
+			career_ipad_hotspot();
+			career_iphone_hotspot();
+		};
 
 		$('.mainslider').find('.slide').each(function(){
 			$('#slidenav_list').append('<li>');
@@ -303,6 +344,8 @@ jQuery(document).ready(function() {
 			} else {
 				$('.maincontainer').removeClass('m-light');
 			};
+			app_activate();
+			career_activate();
 		});
 	};
 });
