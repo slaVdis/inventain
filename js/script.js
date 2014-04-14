@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 			fadeEl.css( 'opacity', opacity );
 		};
 	}
-	$(window).scroll(scrollfade);
+	// $(window).scroll(scrollfade);
 
 	// Showing sidebar menu
 	if ( $('.menu-link').length ) {
