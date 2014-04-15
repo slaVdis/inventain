@@ -252,7 +252,7 @@ jQuery(document).ready(function() {
 		$('.article__readmore').click(function(e){
 			e.preventDefault();
 			$(this).prev('.m-hidden').slideDown();
-			$(this).slideUp();
+			$(this).animate({ 'opacity' : 0 });
 		});
 	};
 

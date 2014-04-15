@@ -2165,8 +2165,8 @@ hgroup, nav, section, summary, video {
 				background: #f2f2f3;
 				}
 			.block + .pagemain__header-wrap {
-				padding-top: 50px;
-				margin-bottom: 15px;
+				/*padding-top: 50px;*/
+				/*margin-bottom: 15px;*/
 				}
 				.pagemain__header-wrap.color-grey .pagemain__header {
 					color: white;
@@ -2174,12 +2174,18 @@ hgroup, nav, section, summary, video {
 
 		.pagemain__inner {}
 
+		.mainicons {
+			padding-top: 75px;
+			}
+		.mainicons.color-grey {
+			background: #f2f2f3;
+			}
 			.pagemain__icons {
 				letter-spacing: -1px;
 				font-size: 0;
 				line-height: 0;
 				text-align: center;
-				margin-bottom: 91px;
+				padding-bottom: 16px;
 				}
 				.pagemain__icons__item {
 					text-align: center;
@@ -2351,7 +2357,7 @@ hgroup, nav, section, summary, video {
 									}
 								.checklist + .article__readmore {
 									margin-left: 40px;
-									position: absolute;
+									/*position: absolute;*/
 									}
 
 					.btn {
@@ -3248,7 +3254,7 @@ hgroup, nav, section, summary, video {
 			.benefits .article {
 				padding-bottom: 0;
 				}
-				.benefits:nth-of-type(1) .article:first-child .article__content {
+				.benefits .article:first-child .article__content {
 					padding-top: 0;
 					border-top: none;
 					}
@@ -3268,9 +3274,7 @@ hgroup, nav, section, summary, video {
 			width: 100%;
 			}
 
-		.pagegal {
-			margin-top: 35px;
-			}
+		.pagegal {}
 			.pagegal__list {
 				/*max-width: 1600px;*/
 				margin: 0 auto;
@@ -3338,36 +3342,43 @@ hgroup, nav, section, summary, video {
 							display: block;
 							}
 
-		.pageicons {
-			margin-bottom: 75px;
+		.iconsblock {
+			max-width: 1000px;
+			margin: 0 auto;
 			}
-			.pageicons__item {
-				position: relative;
-				float: left;
-				width: 193px;
-				padding-left: 70px;
-				font-family: 'gotham_prolight';
-				line-height: 1;
-				margin-left: 33px;
+			.pageicons {
+				padding-top: 75px;
 				}
-				.pageicons__pic {
-					position: absolute;
-					display: block;
-					width: 60px;
-					height: 60px;
-					top: 2px;
-					left: 0;
+			.pageicons.color-grey {
+				background: #f2f2f3;
+				}
+				.pageicons__item {
+					position: relative;
+					float: left;
+					width: 193px;
+					padding-left: 70px;
+					font-family: 'gotham_prolight';
+					line-height: 1;
+					margin-left: 33px;
 					}
-					.pageicons__pic img {
-						max-width: 49px;
+					.pageicons__pic {
+						position: absolute;
+						display: block;
+						width: 60px;
+						height: 60px;
+						top: 2px;
+						left: 0;
 						}
-				.pageicons__number {
-					font-size: 60px;
-					margin-bottom: 3px;
-					}
-				.pageicons__title {
-					font-size: 20px;
-					}
+						.pageicons__pic img {
+							max-width: 49px;
+							}
+					.pageicons__number {
+						font-size: 60px;
+						margin-bottom: 3px;
+						}
+					.pageicons__title {
+						font-size: 20px;
+						}
 
 		.popup {
 			display: none;
