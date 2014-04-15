@@ -95,6 +95,10 @@
 		transition: all .6s;
 		}
 
+	.slide__el-handleft-team {
+		top: 6%;
+		}
+
 	.slide__el-items-group {
 		width: 41%;
 		height: 45%;
@@ -126,12 +130,6 @@
 		width: 24%;
 		height: 22.5%;
 		}
-	
-	.menu-showed .slide__el-cup-coffee {
-		right: 10%;
-		top: 43%;
-		}
-
 
 	.sidemenu__inner {
 		padding: 20px 0 0 25px;
@@ -161,7 +159,7 @@
 			margin-bottom: 0;
 			}
 		.slide__main__title {
-			font-size: 100px;
+			font-size: 85px;
 			}
 		.slide__main__sub {
 			margin-bottom: 20px;
@@ -169,13 +167,15 @@
 
 	.slide__el-cup-coffee {
 		right: 12.5%;
+		top: 48%;
 		}
 
 	.slide__el-ipad-career {
-		left: 2.5%;
+		left: 2%;
 		}
 	.slide__el-iphone-career {
-		left: 17.5%;
+		left: 17.1%;
+		width: 6%;
 		}
 	.slide__el-notebook-brown {
 		right: -1%;
@@ -183,6 +183,10 @@
 
 	.slide__el-divider {
 		left: 2.5%;
+		}
+
+	.slide__el-handleft-team {
+		top: 6%;
 		}
 	}
 @media screen and (min-height: 880px) and (max-width: 1200px) {

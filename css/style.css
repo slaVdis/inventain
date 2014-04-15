@@ -161,11 +161,11 @@ hgroup, nav, section, summary, video {
 						z-index: 2;
 						}
 						.slide__main div {
-							-webkit-transition: all .2s;
+							/*-webkit-transition: all .2s;
 							-moz-transition: all .2s;
 							-ms-transition: all .2s;
 							-o-transition: all .2s;
-							transition: all .2s;
+							transition: all .2s;*/
 							}
 						.slide__main__intro {
 							font-family: 'didot_italic';
@@ -268,10 +268,10 @@ hgroup, nav, section, summary, video {
 						width: 29.97%;
 						height: 74%;
 						top: -43.62%;
-						-webkit-animation: pencil_s 2s ease-out;
-						-moz-animation: pencil_s 2s ease-out;
-						-o-animation: pencil_s 2s ease-out;
-						animation: pencil_s 2s ease-out;
+						/*-webkit-animation: pencil_s 2s ease-out;*/
+						/*-moz-animation: pencil_s 2s ease-out;*/
+						/*-o-animation: pencil_s 2s ease-out;*/
+						/*animation: pencil_s 2s ease-out;*/
 						}
 						@keyframes pencil_s {
 							from {
@@ -351,10 +351,10 @@ hgroup, nav, section, summary, video {
 							-ms-transition: all .2s;
 							-o-transition: all .2s;
 							transition: all .2s;
-							-webkit-animation: apps_handright 1.5s ease-out;
-							-moz-animation: apps_handright 1.5s ease-out;
-							-o-animation: apps_handright 1.5s ease-out;
-							animation: apps_handright 1.5s ease-out;
+							/*-webkit-animation: apps_handright 1.5s ease-out;*/
+							/*-moz-animation: apps_handright 1.5s ease-out;*/
+							/*-o-animation: apps_handright 1.5s ease-out;*/
+							/*animation: apps_handright 1.5s ease-out;*/
 							}
 							@keyframes apps_handright {
 								from {
@@ -401,10 +401,10 @@ hgroup, nav, section, summary, video {
 						right: 0;
 						}					
 					.slide__el-ipad > img {
-						-webkit-animation: apps_ipad 2s;
-						-moz-animation: apps_ipad 2s;
-						-o-animation: apps_ipad 2s;
-						animation: apps_ipad 2s;
+						/*-webkit-animation: apps_ipad 2s;*/
+						/*-moz-animation: apps_ipad 2s;*/
+						/*-o-animation: apps_ipad 2s;*/
+						/*animation: apps_ipad 2s;*/
 						}
 					@keyframes apps_ipad {
 						from { opacity: 0; }
@@ -423,10 +423,10 @@ hgroup, nav, section, summary, video {
 						}
 						.slide__el-ruler-round img {
 							right: 0;
-							-webkit-animation: apps_ruler_round 1.5s;
-							-moz-animation: apps_ruler_round 1.5s;
-							-o-animation: apps_ruler_round 1.5s;
-							animation: apps_ruler_round 1.5s;
+							/*-webkit-animation: apps_ruler_round 1.5s;*/
+							/*-moz-animation: apps_ruler_round 1.5s;*/
+							/*-o-animation: apps_ruler_round 1.5s;*/
+							/*animation: apps_ruler_round 1.5s;*/
 							}
 						@-webkit-keyframes apps_ruler_round {
 							from {
@@ -475,10 +475,10 @@ hgroup, nav, section, summary, video {
 						height: 8.19%;
 						left: -67%;
 						top: 24%;
-						-webkit-animation: apps_ruler_flat 1.5s ease-out;
-						-moz-animation: apps_ruler_flat 1.5s ease-out;
-						-o-animation: apps_ruler_flat 1.5s ease-out;
-						animation: apps_ruler_flat 1.5s ease-out;
+						/*-webkit-animation: apps_ruler_flat 1.5s ease-out;*/
+						/*-moz-animation: apps_ruler_flat 1.5s ease-out;*/
+						/*-o-animation: apps_ruler_flat 1.5s ease-out;*/
+						/*animation: apps_ruler_flat 1.5s ease-out;*/
 						}
 						@keyframes apps_ruler_flat {
 							from {
@@ -523,10 +523,10 @@ hgroup, nav, section, summary, video {
 						right: 0;
 						}
 					.slide__el-ruler-tri > img {
-						-webkit-animation: apps_ruler_tri 1.5s;
-						-moz-animation: apps_ruler_tri 1.5s;
-						-o-animation: apps_ruler_tri 1.5s;
-						animation: apps_ruler_tri 1.5s;
+						/*-webkit-animation: apps_ruler_tri 1.5s;*/
+						/*-moz-animation: apps_ruler_tri 1.5s;*/
+						/*-o-animation: apps_ruler_tri 1.5s;*/
+						/*animation: apps_ruler_tri 1.5s;*/
 						}
 						@keyframes apps_ruler_tri {
 							from {
@@ -582,10 +582,10 @@ hgroup, nav, section, summary, video {
 						height: 9.21%;
 						left: 73%;
 						top: 39%;
-						-webkit-animation: pencil 2s ease-out;
-						-moz-animation: pencil 2s ease-out;
-						-o-animation: pencil 2s ease-out;
-						animation: pencil 2s ease-out;
+						/*-webkit-animation: pencil 2s ease-out;*/
+						/*-moz-animation: pencil 2s ease-out;*/
+						/*-o-animation: pencil 2s ease-out;*/
+						/*animation: pencil 2s ease-out;*/
 						}
 					@keyframes pencil {
 						from { margin-left: 80px; }
@@ -601,10 +601,10 @@ hgroup, nav, section, summary, video {
 						height: 20%;
 						top: 58%;
 						left: 49%;
-						-webkit-animation: ruler_flat 2s ease-out;
-						-moz-animation: ruler_flat 2s ease-out;
-						-o-animation: ruler_flat 2s ease-out;
-						animation: ruler_flat 2s ease-out;
+						/*-webkit-animation: ruler_flat 2s ease-out;*/
+						/*-moz-animation: ruler_flat 2s ease-out;*/
+						/*-o-animation: ruler_flat 2s ease-out;*/
+						/*animation: ruler_flat 2s ease-out;*/
 						}
 					@keyframes ruler_flat {
 						from { margin-left: -100px; }
@@ -622,10 +622,10 @@ hgroup, nav, section, summary, video {
 					left: 16%;
 					}
 					.slide__el-cup-tea img {
-						-webkit-animation: cup_tea 1s ease-out;
-						-moz-animation: cup_tea 1s ease-out;
-						-o-animation: cup_tea 1s ease-out;
-						animation: cup_tea 1s ease-out;
+						/*-webkit-animation: cup_tea 1s ease-out;*/
+						/*-moz-animation: cup_tea 1s ease-out;*/
+						/*-o-animation: cup_tea 1s ease-out;*/
+						/*animation: cup_tea 1s ease-out;*/
 						}
 					@keyframes cup_tea {
 						from {
@@ -703,10 +703,10 @@ hgroup, nav, section, summary, video {
 						height: 100%;
 						bottom: 0;
 						left: 66%;
-						-webkit-animation: clip_green 2s;
-						-moz-animation: clip_green 2s;
-						-o-animation: clip_green 2s;
-						animation: clip_green 2s;
+						/*-webkit-animation: clip_green 2s;*/
+						/*-moz-animation: clip_green 2s;*/
+						/*-o-animation: clip_green 2s;*/
+						/*animation: clip_green 2s;*/
 						}
 					@keyframes clip_green {
 						from {
@@ -730,10 +730,10 @@ hgroup, nav, section, summary, video {
 						height: 100%;
 						bottom: 0;
 						left: 135%;
-						-webkit-animation: clip_orange 2s;
-						-moz-animation: clip_orange 2s;
-						-o-animation: clip_orange 2s;
-						animation: clip_orange 2s;
+						/*-webkit-animation: clip_orange 2s;*/
+						/*-moz-animation: clip_orange 2s;*/
+						/*-o-animation: clip_orange 2s;*/
+						/*animation: clip_orange 2s;*/
 						}
 					@keyframes clip_orange {
 						from {
@@ -781,10 +781,10 @@ hgroup, nav, section, summary, video {
 					}
 					.slide__el-palette img {
 						bottom: 0;
-						-webkit-animation: palette .8s;
-						-moz-animation: palette .8s;
-						-o-animation: palette .8s;
-						animation: palette .8s;
+						/*-webkit-animation: palette .8s;*/
+						/*-moz-animation: palette .8s;*/
+						/*-o-animation: palette .8s;*/
+						/*animation: palette .8s;*/
 						}
 					@keyframes palette {
 						from {
@@ -859,10 +859,10 @@ hgroup, nav, section, summary, video {
 						height: 53.31%;
 						bottom: 0;
 						left: -14.5%;
-						-webkit-animation: handleft_about 1s;
-						-moz-animation: handleft_about 1s;
-						-o-animation: handleft_about 1s;
-						animation: handleft_about 1s;
+						/*-webkit-animation: handleft_about 1s;*/
+						/*-moz-animation: handleft_about 1s;*/
+						/*-o-animation: handleft_about 1s;*/
+						/*animation: handleft_about 1s;*/
 						}
 					@keyframes handleft_about {
 						from { margin-bottom: -100px; }
@@ -881,22 +881,23 @@ hgroup, nav, section, summary, video {
 						}
 
 				.slide__el-cup-coffee {
-					width: 14.3%;
-					height: 18.54%;
-					top: 39.4%;
-					right: 14.6%;
+					width: 13.3%;
+					height: 16.54%;
+					top: 43.4%;
+					right: 10.6%;
 					}
 					.slide__el-coffee {
+						display: none;
 						height: 61.12%;
 						width: 58.46%;
 						top: 17.98%;
 						left: 15.05%;
 						}
 						.slide__el-coffee img {
-							-webkit-animation: coffee 2s ease-out;
-							-moz-animation: coffee 2s ease-out;
-							-o-animation: coffee 2s ease-out;
-							animation: coffee 2s ease-out;
+							/*-webkit-animation: coffee 2s ease-out;*/
+							/*-moz-animation: coffee 2s ease-out;*/
+							/*-o-animation: coffee 2s ease-out;*/
+							/*animation: coffee 2s ease-out;*/
 							}
 						@keyframes coffee {
 							from {
@@ -948,10 +949,10 @@ hgroup, nav, section, summary, video {
 						height: 285.61%;
 						left: 7%;
 						top: -240%;
-						-webkit-animation: handright_about 2s;
-						-moz-animation: handright_about 2s;
-						-o-animation: handright_about 2s;
-						animation: handright_about 2s;
+						/*-webkit-animation: handright_about 2s;*/
+						/*-moz-animation: handright_about 2s;*/
+						/*-o-animation: handright_about 2s;*/
+						/*animation: handright_about 2s;*/
 						}
 					@keyframes handright_about {
 						from { margin-top: -100px; }
@@ -986,14 +987,14 @@ hgroup, nav, section, summary, video {
 						height: 100%;
 						top: 0;
 						text-align: center;
-						-webkit-animation: imac 1s ease-in;
-						-moz-animation: imac 1s ease-in;
-						-o-animation: imac 1s ease-in;
-						animation: imac 1s ease-in;
-						-webkit-animation-fill-mode: forwards;
-						-moz-animation-fill-mode: forwards;
-						-o-animation-fill-mode: forwards;
-						animation-fill-mode: forwards;
+						/*-webkit-animation: imac 1s ease-in;*/
+						/*-moz-animation: imac 1s ease-in;*/
+						/*-o-animation: imac 1s ease-in;*/
+						/*animation: imac 1s ease-in;*/
+						/*-webkit-animation-fill-mode: forwards;*/
+						/*-moz-animation-fill-mode: forwards;*/
+						/*-o-animation-fill-mode: forwards;*/
+						/*animation-fill-mode: forwards;*/
 						opacity: 0;
 						}
 					@keyframes imac {
@@ -1014,6 +1015,7 @@ hgroup, nav, section, summary, video {
 					left: 20%;
 					}
 					.slide__el-iphone-career-hotspot {
+						display: none;
 						width: 82.14%;
 						height: 72.93%;
 						left: 7.14%;
@@ -1035,10 +1037,10 @@ hgroup, nav, section, summary, video {
 							-ms-transform: rotate(-20deg) translateX(30%);
 							-o-transform: rotate(-20deg) translateX(30%);
 							transform: rotate(-20deg) translateX(30%);
-							-webkit-animation: iphone_hotspot 1s ease-in;
-							-moz-animation: iphone_hotspot 1s ease-in;
-							-o-animation: iphone_hotspot 1s ease-in;
-							animation: iphone_hotspot 1s ease-in;
+							/*-webkit-animation: iphone_hotspot 1s ease-in;*/
+							/*-moz-animation: iphone_hotspot 1s ease-in;*/
+							/*-o-animation: iphone_hotspot 1s ease-in;*/
+							/*animation: iphone_hotspot 1s ease-in;*/
 							}
 						@keyframes iphone_hotspot {
 							from {
@@ -1080,6 +1082,7 @@ hgroup, nav, section, summary, video {
 					left: 4.3%;
 					}
 					.slide__el-ipad-career-hotspot {
+						display: none;
 						width: 87.23%;
 						height: 79.18%;
 						left: 5.1%;
@@ -1101,10 +1104,10 @@ hgroup, nav, section, summary, video {
 							-ms-transform: rotate(-20deg) translateX(30%);
 							-o-transform: rotate(-20deg) translateX(30%);
 							transform: rotate(-20deg) translateX(30%);
-							-webkit-animation: ipad_hotspot 1s ease-in;
-							-moz-animation: ipad_hotspot 1s ease-in;
-							-o-animation: ipad_hotspot 1s ease-in;
-							animation: ipad_hotspot 1s ease-in;
+							/*-webkit-animation: ipad_hotspot 1s ease-in;*/
+							/*-moz-animation: ipad_hotspot 1s ease-in;*/
+							/*-o-animation: ipad_hotspot 1s ease-in;*/
+							/*animation: ipad_hotspot 1s ease-in;*/
 							}
 						@keyframes ipad_hotspot {
 							from {
@@ -1184,10 +1187,10 @@ hgroup, nav, section, summary, video {
 					bottom: 11%;
 					left: 29.5%;
 					text-align: center;
-					-webkit-animation: keyboard 2s;
-					-moz-animation: keyboard 2s;
-					-o-animation: keyboard 2s;
-					animation: keyboard 2s;
+					/*-webkit-animation: keyboard 2s;*/
+					/*-moz-animation: keyboard 2s;*/
+					/*-o-animation: keyboard 2s;*/
+					/*animation: keyboard 2s;*/
 					}
 					.slide__el-keyboard img { position: relative; bottom: 0; right: 0; }
 					@keyframes keyboard {
@@ -1204,23 +1207,23 @@ hgroup, nav, section, summary, video {
 						height: 73.17%;
 						left: 105.5%;
 						bottom: 8%;
-						-webkit-animation: mouse 2s;
-						-moz-animation: mouse 2s;
-						-o-animation: mouse 2s;
-						animation: mouse 2s;
-						-webkit-animation-delay: .2s;
-						-moz-animation-delay: .2s;
-						-o-animation-delay: .2s;
-						animation-delay: .2s;
-						-webkit-animation-fill-mode: forwards;
-						-moz-animation-fill-mode: forwards;
-						-o-animation-fill-mode: forwards;
-						animation-fill-mode: forwards;
-						-webkit-transform: translateY(100px);
+						/*-webkit-animation: mouse 2s;*/
+						/*-moz-animation: mouse 2s;*/
+						/*-o-animation: mouse 2s;*/
+						/*animation: mouse 2s;*/
+						/*-webkit-animation-delay: .2s;*/
+						/*-moz-animation-delay: .2s;*/
+						/*-o-animation-delay: .2s;*/
+						/*animation-delay: .2s;*/
+						/*-webkit-animation-fill-mode: forwards;*/
+						/*-moz-animation-fill-mode: forwards;*/
+						/*-o-animation-fill-mode: forwards;*/
+						/*animation-fill-mode: forwards;*/
+						/*-webkit-transform: translateY(100px);
 						-moz-transform: translateY(100px);
 						-ms-transform: translateY(100px);
 						-o-transform: translateY(100px);
-						transform: translateY(100px);
+						transform: translateY(100px);*/
 						}
 						.slide__el-mouse img { bottom: 0; right: 0; }
 					@keyframes mouse {
@@ -1300,14 +1303,14 @@ hgroup, nav, section, summary, video {
 	  						-ms-transform-origin: right center;
 	  						-o-transform-origin: right center;
 	  						transform-origin: right center;
-	  						-webkit-animation: notebook_brown__page 2s;
-	  						-moz-animation: notebook_brown__page 2s;
-	  						-o-animation: notebook_brown__page 2s;
-							animation: notebook_brown__page 2s;
-							-webkit-animation-fill-mode: forwards;
-							-moz-animation-fill-mode: forwards;
-							-o-animation-fill-mode: forwards;
-							animation-fill-mode: forwards;
+	  						/*-webkit-animation: notebook_brown__page 2s;*/
+	  						/*-moz-animation: notebook_brown__page 2s;*/
+	  						/*-o-animation: notebook_brown__page 2s;*/
+							/*animation: notebook_brown__page 2s;*/
+							/*-webkit-animation-fill-mode: forwards;*/
+							/*-moz-animation-fill-mode: forwards;*/
+							/*-o-animation-fill-mode: forwards;*/
+							/*animation-fill-mode: forwards;*/
 							}
 						@keyframes notebook_brown__page {
 							from {
@@ -1357,10 +1360,10 @@ hgroup, nav, section, summary, video {
 					}
 					.slide__el-magnifier-career img {
 						right: 0;
-						-webkit-animation: career_magnifier 2s;
-						-moz-animation: career_magnifier 2s;
-						-o-animation: career_magnifier 2s;
-						animation: career_magnifier 2s;
+						/*-webkit-animation: career_magnifier 2s;*/
+						/*-moz-animation: career_magnifier 2s;*/
+						/*-o-animation: career_magnifier 2s;*/
+						/*animation: career_magnifier 2s;*/
 						}
 					@keyframes career_magnifier {
 						from {
@@ -1459,10 +1462,10 @@ hgroup, nav, section, summary, video {
 						bottom: 0;
 						}
 					.slide__el-letters-bottom > img {
-						-webkit-animation: letters_bottom 1.5s;
-						-moz-animation: letters_bottom 1.5s;
-						-o-animation: letters_bottom 1.5s;
-						animation: letters_bottom 1.5s;
+						/*-webkit-animation: letters_bottom 1.5s;*/
+						/*-moz-animation: letters_bottom 1.5s;*/
+						/*-o-animation: letters_bottom 1.5s;*/
+						/*animation: letters_bottom 1.5s;*/
 						}
 					@keyframes letters_bottom {
 						from {
@@ -1502,10 +1505,10 @@ hgroup, nav, section, summary, video {
 						height: 136.47%;
 						bottom: 40%;
 						left: 0;
-						-webkit-animation: letters_left 2s;
-						-moz-animation: letters_left 2s;
-						-o-animation: letters_left 2s;
-						animation: letters_left 2s;
+						/*-webkit-animation: letters_left 2s;*/
+						/*-moz-animation: letters_left 2s;*/
+						/*-o-animation: letters_left 2s;*/
+						/*animation: letters_left 2s;*/
 						}
 					@keyframes letters_left {
 						from {
@@ -1580,10 +1583,10 @@ hgroup, nav, section, summary, video {
 					}
 					.slide__el-letter-right-coffee img {
 						right: 0;
-						-webkit-animation: letters_right_coffee 1s;
-						-moz-animation: letters_right_coffee 1s;
-						-o-animation: letters_right_coffee 1s;
-						animation: letters_right_coffee 1s;
+						/*-webkit-animation: letters_right_coffee 1s;*/
+						/*-moz-animation: letters_right_coffee 1s;*/
+						/*-o-animation: letters_right_coffee 1s;*/
+						/*animation: letters_right_coffee 1s;*/
 						}
 					@keyframes letters_right_coffee {
 						from {
@@ -1656,10 +1659,10 @@ hgroup, nav, section, summary, video {
 					left: 32%;
 					}
 					.slide__el-letter-classic > img {
-						-webkit-animation: letters_classic 1s;
-						-moz-animation: letters_classic 1s;
-						-o-animation: letters_classic 1s;
-						animation: letters_classic 1s;
+						/*-webkit-animation: letters_classic 1s;*/
+						/*-moz-animation: letters_classic 1s;*/
+						/*-o-animation: letters_classic 1s;*/
+						/*animation: letters_classic 1s;*/
 						}
 					@keyframes letters_classic {
 						from {
@@ -1709,10 +1712,10 @@ hgroup, nav, section, summary, video {
 						height: 41%;
 						left: 34%;
 						top: 0;
-						-webkit-animation: letters_paris 1s;
-						-moz-animation: letters_paris 1s;
-						-o-animation: letters_paris 1s;
-						animation: letters_paris 1s;
+						/*-webkit-animation: letters_paris 1s;*/
+						/*-moz-animation: letters_paris 1s;*/
+						/*-o-animation: letters_paris 1s;*/
+						/*animation: letters_paris 1s;*/
 						}
 					@keyframes letters_paris {
 						from {
