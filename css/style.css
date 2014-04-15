@@ -2232,11 +2232,21 @@ hgroup, nav, section, summary, video {
 					padding: 68px 0 70px;
 					}
 					.article {
+						padding-top: 75px;
 						padding-bottom: 38px;
 						}
-					.article + .article {
-						margin-top: 22px;
+					.article.color-grey {
+						background: #f2f2f3;
 						}
+					.article + .article {
+						margin-top: -22px;
+						padding-top: 0;
+						}
+						.article__inner {
+							max-width: 1000px;
+							margin: 0 auto;
+							padding: 0 20px;
+							}
 						.article__headline {
 							font-size: 72px;
 							color: #40bd51;
@@ -2260,9 +2270,9 @@ hgroup, nav, section, summary, video {
 							padding-top: 25px;
 							border-top: 1px solid #d2d2d2;
 							}
-						.article.no-border .article__content {
+						.article.article-first .article__content {
 							border: none;
-							padding-top: 0;
+							/*padding-top: 75px;*/
 							}
 							.article__header {
 								padding-top: 2px;
